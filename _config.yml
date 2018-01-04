@@ -1,0 +1,9 @@
+collections:
+  photos:
+    output: true
+
+plugins:
+  - jekyll-feed
+
+exclude:
+  - img/portfolio/make-thumbnails.sh

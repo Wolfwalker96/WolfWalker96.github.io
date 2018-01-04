@@ -1,0 +1,20 @@
+---
+layout: page
+title: Portfolio
+description: Photographies and art I have made
+---
+<div class="gallery">
+  {% for photo in site.photos %}
+  <div class="photos">
+      <img src="/img/portfolio/thumb_{{ photo.image_url }}" alt="{{ photo.title }}">
+      <a href="{{ photo.url }}">
+          <div class="description">
+              <strong>{{ photo.title }}</strong>
+              <p>
+                  {{ photo.description }}
+              </p>
+          </div>
+      </a>
+  </div>
+  {% endfor %}
+</div>

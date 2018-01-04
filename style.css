@@ -1,0 +1,420 @@
+html{
+    font-size: 100%;
+}
+
+@media screen and (max-width: 640px) {
+  html{
+    font-size: 80%;
+  }
+}
+
+body{
+    background-color: #fdfdfd;
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    min-height: 100%;
+}
+
+a{
+    color:inherit;
+    text-decoration: inherit;
+}
+
+p{
+    text-align: justify;
+}
+
+h1{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h2{
+    font-size: 1.8rem;
+    vertical-align: top;
+    line-height: 3rem;
+    background-image: linear-gradient(0deg, black, black);
+    background-repeat: no-repeat;
+    background-size: 4rem .4rem;
+    background-position: left bottom;
+}
+.Huge{
+    font-size: 3rem;
+}
+.Large{
+    font-size: 1.2rem;
+}
+
+.black{
+    background:#2f2f2f;
+    color:white;
+}
+
+.midnight-blue{
+    background-color: #2c3e50;
+    color:white;
+}
+
+.blue{
+    background:blue;
+    color:white;
+}
+
+.github{
+    background-color:#24292e;
+    color:white;
+}
+
+body > header{
+    background-color: #2f2f2f;
+    width:100vw;
+    color:white;
+}
+
+body > header nav ul {
+    margin:auto;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+    width: 50%;
+}
+
+body > header nav ul li{
+    font-size: 1.5rem;
+    height:3.5rem;
+    width:calc(23% - 6px);
+    line-height: 3.5rem;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+body > header nav ul li:nth-child(3n){
+    width: 8%;
+}
+
+body > header nav ul li:nth-child(-n+2){
+    text-align: left;
+}
+
+body > header nav ul :nth-child(n+4){
+    text-align: right;
+}
+@media screen and (max-width: 640px) {
+  body > header nav ul li{
+    width:auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center !important;
+  }
+
+  body > header nav ul{
+    overflow: auto;
+    white-space: nowrap;
+  }
+
+}
+
+button, .button{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    vertical-align: middle;
+    border-radius: .3rem;
+    border:none;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    transition-duration: .5s;
+}
+
+button > i, .button > i{
+    float:left;
+    font-size: 1.5rem;
+}
+
+button:hover, .button:hover{
+    cursor: pointer;
+    filter:opacity(.9);
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    bottom: 0px;
+    background-color: #2f2f2f;
+    line-height: 2rem;
+    vertical-align: middle;
+    color:white;
+    text-align: center;
+}
+
+img{
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+
+.avatar {
+    border-radius: 50%;
+    transition-duration: .5s;
+}
+
+.avatar:hover{
+    border-radius: 10%;
+}
+
+.content{
+    margin:auto;
+    margin-top: -3.5rem;
+    padding-top: 3.5rem;
+    padding-bottom: 1rem;
+    width:50vw;
+    min-height: calc(100vh - 3.5rem - 2rem - 1rem);
+}
+
+@media screen and (max-width: 1280px) {
+    .content, body > header nav ul{
+        width:75%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+  .content , body > header nav ul{
+      width: 90%;
+  }
+}
+
+.content header p {
+    text-align: center;
+    font-style: italic;
+}
+
+article, aside{
+    display: inline-block;
+}
+
+article {
+    margin:0;
+    padding: 0;
+    width: 70%;
+}
+aside{
+    margin:0;
+    margin-left: 5%;
+    padding: 0;
+    padding-top: 1rem;
+    width:25%;
+    float:right;
+}
+
+@media screen and (max-width: 640px) {
+    article{
+        width: 100%;
+    }
+    aside{
+        border-top: solid .5rem black;
+        margin-left: 0;
+        width: 100%;
+        float: none;
+    }
+    .avatar{
+        width: 25%;
+    }
+}
+
+article p{
+    text-align: justify;
+}
+
+article img{
+    max-width: 100%;
+}
+
+figure {
+    margin:0;
+    margin-top:1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+figure figcaption {
+    font-style: italic;
+    font-size: .8rem;
+}
+
+aside h1{
+    font-size: 1.2rem;
+}
+
+aside #author{
+    text-align: center;
+}
+aside #author .avatar{
+    margin: auto;
+    display: block;
+    max-width: 50%;
+}
+
+aside #author span{
+    margin-top:1rem;
+    display: block;
+}
+
+aside button, .button{
+    display: block;
+    width: calc(100% - 2rem );
+}
+
+.gallery{
+    width:100%;
+}
+
+.gallery .photos{
+    margin-right: 0;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    width:calc(((100% / 3) - 2%));
+    display: inline-block;
+    position: relative;
+}
+
+.gallery .photos:nth-child(3n+1){
+    margin-left: 0;
+}
+
+@media screen and (max-width: 1280px) {
+    .gallery .photos{
+        width:calc(((100% / 2) - 2%));;
+    }
+
+    .gallery .photos:nth-child(3n+1){
+        margin-left: 2%;
+    }
+
+    .gallery .photos:nth-child(2n+1){
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .gallery .photos{
+        margin-left: 0;
+        width:100%;
+        display: block;
+    }
+}
+
+.gallery .photos img{
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.gallery .photos .description{
+    position: absolute;
+    padding-top: 10%;
+    top:20%;
+    width:calc(100% - 2rem);
+    bottom: 3px;
+    color:white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    background-color:rgba(0,0,0,0.5);
+    height:inherit;
+    float:left;
+    opacity: 0;
+    transition-duration: .5s;
+}
+
+.gallery .photos:hover .description{
+    opacity: 1;
+}
+
+.posts{
+    position: relative;
+}
+
+.posts p {
+    padding-right: 7rem;
+}
+
+.posts .date{
+    position: absolute;
+    top:0px;
+    right:0px;
+    color:white;
+    background-color: #2f2f2f;
+    text-align: center;
+    padding:1rem;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    vertical-align: middle;
+    height: 4rem;
+    width:4rem;
+    border-radius: 50%;
+    overflow: hidden;
+    transition-duration: .5s;
+}
+
+.posts .date:hover{
+    border-radius: 10%;
+}
+
+.posts > .date > *{
+    display: block;
+}
+
+.posts > .date > .month{
+    font-size: .8rem;
+}
+
+.cols-container, .cols-3-container{
+    position: relative;
+}
+
+.col, .col-2 {
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: .5%;
+    margin-right: .5%;
+}
+
+@media screen and (max-width: 640px) {
+  .col, .col-2 {
+      display: block !important;
+      width: 100% !important;
+      margin-left: 0px !important;
+      margin-right: 0px !important;
+  }
+}
+
+.top {
+    vertical-align: top;
+}
+
+.bottom{
+    vertical-align: bottom;
+}
+
+.cols-container > .col{
+    width: calc((99% / 2) - 3px);
+}
+
+.cols-3-container > .col{
+    width: calc((98% / 3) - 4px);
+}
+
+.cols-3-container > .col-2{
+    width: calc(((2 * (98% / 3)) + 1% ) - 2px);
+}
+
+.cols-container :first-child, .cols-3-container :first-child{
+    margin-left: 0;
+}
+
+.cols-container :last-child, .cols-3-container :last-child{
+    margin-right: 0;
+}

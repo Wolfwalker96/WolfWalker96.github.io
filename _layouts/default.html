@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang=en>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <script src="https://use.fontawesome.com/9a7b880b6f.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/style.css">
+				{% if page.is_home %}
+        <link rel="stylesheet" type="text/css" href="/index.css">
+				{% endif %}
+        <title>Paul's personal website</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="/projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="/index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="/portfolio.html">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="/curriculum.html">Curriculum</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+				{{ content }}
+    </body>
+</html>

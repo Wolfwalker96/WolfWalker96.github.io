@@ -1,0 +1,18 @@
+---
+layout: page
+title: Blog
+description: 
+---
+{% for post in site.posts %}
+<div class="posts">
+    <h2>{{ post.title }}</h2>
+    <p>
+        {{ post.description }}
+    </p>
+    <div class="date">
+        <span class="day">{{ post.date | date: '%d'}}</span>
+        <span class="month">{{ post.date | date: '%B'}}</span>
+    </div>
+    <a href="{{ post.url }}"><div class="button midnight-blue">Read the article</div></a>
+</div>
+{% endfor %}
