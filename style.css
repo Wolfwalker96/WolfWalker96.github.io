@@ -305,6 +305,10 @@ aside button, .button{
         width:100%;
         display: block;
     }
+
+    .gallery .photos:nth-child(3n+1){
+        margin-left: 0px;
+    }
 }
 
 .gallery .photos img{
